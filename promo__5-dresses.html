@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .dresses {
+        position: relative;
+        width: 994px;
+        margin: 0 auto;
+    }
+    .block-numbers {
+        margin: 15px 0 80px 0;
+        padding: 0;
+        text-align: center;
+        line-height: 22px;
+        font-size: 12px;
+        font-family: 'Gilroy Light', Helvetica, sans-serif;
+        letter-spacing: 0.05em;
+    }
+    .template-block {
+        position: relative;
+    }
+    .template-block__sticky {
+        position: sticky;
+        top: 0;
+
+        background-color: #ffffff;
+        z-index: 5;
+    }
+    .static-block__static-img {
+        display: block;
+        margin: 0 auto;
+    }
+    .static-block {
+        position: relative;
+        z-index: 10;
+        background-color: #ffffff;
+    }
+    .template-block__static-img--1 {
+    }
+    .template-block__static-img--2 {
+    }
+    .sticky-block__wrapper {
+        position: relative;
+
+        min-width: 994px;
+        min-height: 600px;
+    }
+    .sticky-block__image {
+        position: absolute;
+    }
+    .sticky-block__image--1 {
+        top: 0;
+        left: 0;
+    }
+    .sticky-block__image--12 {
+        top: -74px;
+        left: 464px;
+        opacity: 0;
+    }
+    .sticky-block__image--13 {
+        right: -100px;
+        top: 336px;
+        opacity: 0;
+    }
+    .sticky-block__image--title {
+        right: 0;
+        top: 100px;
+    }
+    .sticky-block__link {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        font-family: 'Gilroy Light', Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+    }
+    .sticky-block__span {
+        position: relative;
+    }
+    .sticky-block__span::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 1px;
+
+        background-color: #000000;
+    }
+</style>
+<div class="dresses">
+    <section class="dresses__block template-block">
+        <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block1__static.jpg" alt="" class="static-block__static-img static-block__static-img--1">
+        <p class="template-block__numbers block-numbers">
+            Сарафан, арт.: 8011793
+            Эспадрильи, арт.: 5948668
+            Сумка, арт.: 7747698
+            Шляпа, арт.: 7742008
+            Колье, арт.: 8116463
+        </p>
+    </section>
+    <section  class="dresses__block template-block">
+        <div class="template-block__sticky sticky-block--1">
+            <div class="sticky-block__wrapper">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block1__move1.jpg" alt="" class="sticky-block__image sticky-block__image--11">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block1__move2.jpg" alt="" class="sticky-block__image sticky-block__image--12">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block1__move3.jpg" alt="" class="sticky-block__image sticky-block__image--13">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block1__title.png" alt="" class="sticky-block__image sticky-block__image--title">
+            </div>
+            <a href="#" class="sticky-block__link"><span class="sticky-block__span">смотреть сарафаны</span></a>
+        </div>
+        <div class="template-block__static static-block">
+            <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block2__static.jpg" alt="" class="static-block__static-img static-block__static-img--2">
+            <p class="static-block__numbers block-numbers">
+                Сарафан, арт.: 8011793
+                Эспадрильи, арт.: 5948668
+                Сумка, арт.: 7747698
+                Шляпа, арт.: 7742008
+                Колье, арт.: 8116463
+            </p>
+        </div>
+    </section>
+    <section  class="dresses__block template-block">
+        <div class="template-block__sticky sticky-block--1">
+            <div class="sticky-block__wrapper">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block2__move1.jpg" alt="" class="sticky-block__image sticky-block__image--21">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block2__move2.jpg" alt="" class="sticky-block__image sticky-block__image--22">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block2__title.png" alt="" class="sticky-block__image sticky-block__image--title">
+            </div>
+            <a href="#" class="sticky-block__link"><span class="sticky-block__span">смотреть белые платья</span></a>
+        </div>
+        <div class="template-block__static static-block">
+            <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block3__static.jpg" alt="" class="static-block__static-img static-block__static-img--2">
+            <p class="static-block__numbers block-numbers">
+                Платье, арт.: 8001751
+                Мюли, арт.: 8057851
+                Сумка, арт.: 8052475
+                Колье, арт.: 8054411
+                Серьги, арт.: 7889675
+                Заколки, арт.: 7877415
+            </p>
+        </div>
+    </section>
+    <section  class="dresses__block template-block">
+        <div class="template-block__sticky sticky-block--1">
+            <div class="sticky-block__wrapper">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block3__move1.jpg" alt="" class="sticky-block__image sticky-block__image--31">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block3__move2.jpg" alt="" class="sticky-block__image sticky-block__image--32">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block4__title.png" alt="" class="sticky-block__image sticky-block__image--title">
+            </div>
+            <a href="#" class="sticky-block__link"><span class="sticky-block__span">смотреть платья-миди</span></a>
+        </div>
+        <div class="template-block__static static-block">
+            <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block4__static.jpg" alt="" class="static-block__static-img static-block__static-img--2">
+            <p class="static-block__numbers block-numbers">
+                Платье, арт.: 7988579
+                Казаки, арт.: 6897519
+                Сумка, арт.: 7816102
+                Серьги, арт.: 8009452
+                Очки, арт.: 6364392
+            </p>
+        </div>
+    </section>
+    <section  class="dresses__block template-block">
+        <div class="template-block__sticky sticky-block--1">
+            <div class="sticky-block__wrapper">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block4__move1.jpg" alt="" class="sticky-block__image sticky-block__image--41">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block4__move2.jpg" alt="" class="sticky-block__image sticky-block__image--42">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block4__move3.jpg" alt="" class="sticky-block__image sticky-block__image--43">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block3__title.png" alt="" class="sticky-block__image sticky-block__image--title">
+            </div>
+            <a href="#" class="sticky-block__link"><span class="sticky-block__span">смотреть мини-платья</span></a>
+        </div>
+        <div class="template-block__static static-block">
+            <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block5__static.jpg" alt="" class="static-block__static-img static-block__static-img--2">
+            <p class="static-block__numbers block-numbers">
+                Платье, арт.: 7988568
+                Туфли, арт.: 7535928
+                Сумка, арт.: 7816114
+                Серьги, арт.: 8035095
+            </p>
+        </div>
+    </section>
+    <section  class="dresses__block template-block">
+        <div class="template-block__sticky sticky-block--1">
+            <div class="sticky-block__wrapper">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block5__move1.jpg" alt="" class="sticky-block__image sticky-block__image--41">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block5__move2.jpg" alt="" class="sticky-block__image sticky-block__image--42">
+                <img src="https://images.wbstatic.net/marketing/promo/promo__5-dresses/block5__title.png" alt="" class="sticky-block__image sticky-block__image--title">
+            </div>
+            <a href="#" class="sticky-block__link"><span class="sticky-block__span">смотреть платья с открытыми плечами</span></a>
+        </div>
+    </section>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script>
+    let stickyBlock1 = document.querySelector('.sticky-block--1');
+    let template2 = document.querySelector('.template-block--2');
+    let stickyImage12 = document.querySelector('.sticky-block__image--12');
+    let stickyImage13 = document.querySelector('.sticky-block__image--13');
+    let screenHeight = screen.availHeight;
+    let moved = false;
+
+    function changeValueOnOffsetSize(element, offset, minBoard, maxBoard, changedValue, direction) {
+      let coordX;
+
+      switch (direction) {
+        case "toRight" :
+          coordX = element.offsetLeft + offset;
+          break;
+        case "toLeft":
+          coordX = element.offsetLeft - offset;
+          break;
+        case "toTop":
+          coordX = element.offsetTop - offset;
+          break;
+        case "toBottom":
+          coordX = element.offsetTop + offset;
+          break;
+      }
+      if(coordX > minBoard && coordX < maxBoard) {
+        element.style[changedValue] = coordX + 'px';
+      }
+    }
+
+    function moveElement(element, parentBlock, speedScroll, scroll, newScroll, percentAppearance, percentDisappearance, leftBoard, rightBoard, direction, value) {
+      let scrollOffset = newScroll * speedScroll - scroll;
+      console.log(scrollOffset);
+
+      let parentBlockY = parentBlock.getBoundingClientRect().top;
+
+      if ((parentBlockY < (screenHeight * percentAppearance)) && scrollOffset >= 0) {
+        changeValueOnOffsetSize(element, scrollOffset, leftBoard, rightBoard, value, direction);
+      }
+      else if((parentBlockY > (screenHeight * percentDisappearance)) && scrollOffset < 0){
+        changeValueOnOffsetSize(element, scrollOffset, leftBoard, rightBoard, value, direction);
+      }
+    }
+    document.addEventListener('scroll', ()=> {
+        if(stickyBlock1.getBoundingClientRect().top < (screenHeight * 0.5)) {
+          TweenMax.to(stickyImage12, 0.8, {opacity:1, top: 26});
+          TweenMax.to(stickyImage13, 0.8, {opacity:1, right: 0});
+          moved = true;
+        }
+        if((stickyBlock1.getBoundingClientRect().top > (screenHeight * 0.6)) && moved) {
+          TweenMax.to(stickymage12, 1, {opacity:0, top: -74});
+          TweenMax.to(stickyImage13, 1, {opacity:0, right: -100});
+        }
+    });
+</script>
+</body>
+</html>
